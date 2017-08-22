@@ -33,5 +33,16 @@ namespace WebCore20_refClasicdll.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult Prueba()
+        {
+            net
+
+            return View(new PruebaModel()
+            {
+                Texto= NetCoreLib.Prueba.GetText(),
+                Texto2="OtroTexto"
+            });
+        }
     }
 }
